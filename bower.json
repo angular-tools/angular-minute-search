@@ -1,0 +1,21 @@
+{
+  "name": "angular-minute-search",
+  "authors": [
+    "minutephp <dev@minutephp.com>"
+  ],
+  "description": "AngularJS simplest implementation of search bar",
+  "main": "src/js/angular-minute-search.js",
+  "keywords": [
+    "angularjs",
+    "notice"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.minutephp.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
