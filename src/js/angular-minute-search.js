@@ -14,14 +14,14 @@
                 link: function ($scope, element, attrs) {
                     $scope.obj = {};
                     var mode = $scope.searchMode || 'LIKE';
-                    $scope.angularMinuteSearch.setSearchMode(mode);
 
                     $scope.$watch('obj.searchText', function (v) {
                         if (typeof(v) != 'undefined') {
                             $timeout.cancel($scope.obj.lastTimeout);
                             $scope.obj.lastTimeout = $timeout(function () {
+                                $scope.angularMinuteSearch.setSearchMode(mode);
                                 $scope.angularMinuteSearch.setSearchCriteria(mode == 'LIKE' ? '%' + v + '%' : v);
-                            }, 350);
+                            }, 500);
                         }
                     });
                 }
